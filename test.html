@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraf Galerisi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .gallery img {
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+            height: auto;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            border-color: #333;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Fotoğraf Galerim</h1>
+    </div>
+
+    <div class="gallery">
+        <img src="images/photo1.jpg" alt="Fotoğraf 1">
+        <img src="images/photo2.jpg" alt="Fotoğraf 2">
+        <img src="images/photo3.jpg" alt="Fotoğraf 3">
+        <img src="images/photo4.jpg" alt="Fotoğraf 4">
+        <img src="images/photo5.jpg" alt="Fotoğraf 5">
+        <!-- Daha fazla fotoğraf eklemek için benzer img etiketlerini buraya ekleyin -->
+    </div>
+
+</body>
+</html>
